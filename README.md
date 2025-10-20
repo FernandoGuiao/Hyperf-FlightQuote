@@ -19,7 +19,7 @@ Em um terminal dentro do container sendo executado:
 
 **Estilo:** Monolito Modular com princípio de Adapters.
 
-**Por quê:** É o melhor trade-off para um MVP. Mantém a simplicidade de um monólito para implantação e desenvolvimento. No caso de um projeto mais maduro, o ideal seria partira para uma arquitetura de microsserviços.
+**Por quê:** É o melhor trade-off para um MVP. Mantém a simplicidade de um monolito para implantação e desenvolvimento. No caso de um projeto mais maduro, o ideal seria partira para uma arquitetura de microsserviços.
 
 **Estado:**
 * **Search:** Em memória, por requisição. Salvo no `Redis` enquanto a cotação for válida.
