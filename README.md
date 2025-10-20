@@ -30,7 +30,7 @@ Em um terminal dentro do container sendo executado:
 
 ## 2. Normalização & Polimorfismo
 
-**Unificação:** Usado o padrão Adapter. Cada provedor (ex: `ProviderAAdapter`) implementa uma interface comum (`FlightProviderPort`) e tem a responsabilidade de traduzir sua resposta única para um `DTO` (Data Transfer Object) padronizado do nosso domínio.
+**Unificação:** Usado o padrão Adapter. Cada provedor implementa uma interface comum e tem a responsabilidade de traduzir sua resposta única para um `DTO` (Data Transfer Object) padronizado do nosso domínio.
 
 **IDs estáveis para flight e fare:** Gerado no passo de busca. É um hash (`md5`) de dados essenciais da oferta (provedor, voos, horários, preço). Isso cria um ID único e determinístico que representa aquela oferta específica e pode ser usado como chave no `Redis`. Possibilita inclusive unificar voos de provedores diferentes, adicionando somente novas ofertas.
 
