@@ -9,7 +9,8 @@ O serviço deve ficar disponível em `localhost:9501`
 
 # Testes Automatizados
 
-Em um Terminal dentro do container sendo executado:
+Em um terminal dentro do container sendo executado:
+
 `composer test`
 
 # Respostas do Teste
@@ -38,9 +39,6 @@ Em um Terminal dentro do container sendo executado:
 **Ordem (Search → Price → Book):** O fluxo é imposto pelo estado. O `book` depende de um `priceId` que só é gerado pelo `price`. Se o `priceId` não existe ou expirou no `Redis`, o `book` falha. Assim como não há como obter uma reserva de preço se a cotação já expirou.
 
 **Expiração:** Se o `priceId` expira (o `TTL` no `Redis` acaba), a api `book` recusa a reserva. A API não deve tentar refazer o preço automaticamente durante o `book`;
-
-**Cache:**
-* **Resultados de Busca:** Podem ser cacheados por um tempo muito curto (1-2 minutos) com a chave sendo um hash dos parâmetros de busca, para reduzir requisições idênticas seguidas aos provedores.
 
 ## 4. Resiliência
 
