@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "7ce5d033-3a2d-45c2-ac73-957e2a62158a",
+		"name": "HyperTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16026445"
+	},
+	"item": [
+		{
+			"name": "localhost:9501/flight/search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"origin\": \"GRU\",\r\n  \"destination\": \"MIA\",\r\n  \"departureDate\": \"2024-12-25\",\r\n  \"returnDate\": \"2025-01-10\",\r\n  \"adults\": 2,\r\n  \"children\": 1,\r\n  \"infants\": 0,\r\n  \"tripType\": \"R\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9501/flight/search",
+					"host": [
+						"localhost"
+					],
+					"port": "9501",
+					"path": [
+						"flight",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:9501/flight/search",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"origin\": \"GRU\",\r\n  \"destination\": \"MIA\",\r\n  \"departureDate\": \"2024-12-25\",\r\n  \"returnDate\": \"2025-01-10\",\r\n  \"adults\": 2,\r\n  \"children\": 1,\r\n  \"infants\": 0,\r\n  \"tripType\": \"RT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9501/flight/search",
+							"host": [
+								"localhost"
+							],
+							"port": "9501",
+							"path": [
+								"flight",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Hyperf"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Oct 2025 04:28:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Length",
+							"value": "692"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"quoteId\": \"8349e20f-b121-49c5-9c8a-41e50be623c3\",\n        \"expiresAt\": \"30858-09-29 04:06:51\",\n        \"results\": [\n            {\n                \"flight\": {\n                    \"id\": \"49fc7cc443bef7f22d82d9fced327c57\",\n                    \"providerId\": \"0\",\n                    \"origin\": \"SDU\",\n                    \"destination\": \"CGH\",\n                    \"departureDate\": \"2021-07-18T10:45:00.000000Z\",\n                    \"arrivalDate\": \"2021-07-18T11:50:00.000000Z\",\n                    \"cia\": \"LA\",\n                    \"duration\": 105,\n                    \"legs\": [\n                        {\n                            \"origin\": \"SDU\",\n                            \"destination\": \"CGH\",\n                            \"departureDate\": \"2021-07-18T10:45:00.000000Z\",\n                            \"arrivalDate\": \"2021-07-18T11:50:00.000000Z\",\n                            \"flightNumber\": \"3460\",\n                            \"cia\": \"LA\",\n                            \"duration\": 65\n                        }\n                    ]\n                },\n                \"fares\": [\n                    {\n                        \"id\": \"1-05b5ffa38289aa0edd35ddd8db416a91\",\n                        \"total\": 19479,\n                        \"currency\": \"BRL\",\n                        \"class\": \"Light\",\n                        \"includedLuggage\": []\n                    },\n                    {\n                        \"id\": \"1-66eb24d4032d387d41cc8b15b06d1524\",\n                        \"total\": 27918,\n                        \"currency\": \"BRL\",\n                        \"class\": \"Plus\",\n                        \"includedLuggage\": [\n                            {\n                                \"quantity\": 1,\n                                \"weight\": 23\n                            }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"flight\": {\n                    \"id\": \"038e55eaf4176b16011b956f8b5a5f29\",\n                    \"providerId\": \"1\",\n                    \"origin\": \"SDU\",\n                    \"destination\": \"CGH\",\n                    \"departureDate\": \"2021-07-18T14:00:00.000000Z\",\n                    \"arrivalDate\": \"2021-07-18T15:05:00.000000Z\",\n                    \"cia\": \"G3\",\n                    \"duration\": 105,\n                    \"legs\": [\n                        {\n                            \"origin\": \"SDU\",\n                            \"destination\": \"CGH\",\n                            \"departureDate\": \"2021-07-18T14:00:00.000000Z\",\n                            \"arrivalDate\": \"2021-07-18T15:05:00.000000Z\",\n                            \"flightNumber\": \"1019\",\n                            \"cia\": \"G3\",\n                            \"duration\": 65\n                        }\n                    ]\n                },\n                \"fares\": [\n                    {\n                        \"id\": \"1-a27996f177bce313dbcfae2ec999993c\",\n                        \"total\": 18808,\n                        \"currency\": \"BRL\",\n                        \"class\": \"Light\",\n                        \"includedLuggage\": []\n                    }\n                ]\n            },\n            {\n                \"flight\": {\n                    \"id\": \"d38b25b01564a3115dd692f740099e7c\",\n                    \"providerId\": \"2\",\n                    \"origin\": \"SDU\",\n                    \"destination\": \"CGH\",\n                    \"departureDate\": \"2021-07-18T09:00:00.000000Z\",\n                    \"arrivalDate\": \"2021-07-18T11:35:00.000000Z\",\n                    \"cia\": \"LA\",\n                    \"duration\": 155,\n                    \"legs\": [\n                        {\n                            \"origin\": \"SDU\",\n                            \"destination\": \"GRU\",\n                            \"departureDate\": \"2021-07-18T09:00:00.000000Z\",\n                            \"arrivalDate\": \"2021-07-18T10:05:00.000000Z\",\n                            \"flightNumber\": \"3498\",\n                            \"cia\": \"LA\",\n                            \"duration\": 65\n                        },\n                        {\n                            \"origin\": \"GRU\",\n                            \"destination\": \"CGH\",\n                            \"departureDate\": \"2021-07-18T10:45:00.000000Z\",\n                            \"arrivalDate\": \"2021-07-18T11:35:00.000000Z\",\n                            \"flightNumber\": \"3402\",\n                            \"cia\": \"LA\",\n                            \"duration\": 50\n                        }\n                    ]\n                },\n                \"fares\": [\n                    {\n                        \"id\": \"1-8f7390abdb280bb9c15f244edbc13823\",\n                        \"total\": 22500,\n                        \"currency\": \"BRL\",\n                        \"class\": \"Light\",\n                        \"includedLuggage\": []\n                    },\n                    {\n                        \"id\": \"1-a88498899f4cb55bcd880fa38b934ca8\",\n                        \"total\": 31000,\n                        \"currency\": \"BRL\",\n                        \"class\": \"Plus\",\n                        \"includedLuggage\": [\n                            {\n                                \"quantity\": 1,\n                                \"weight\": 23\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:9501/flight/price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"quoteId\": \"299d7697-36b2-4738-b8c4-8cba26ecc82d\",\r\n  \"flightId\": \"49fc7cc443bef7f22d82d9fced327c57\",\r\n  \"fareId\": \"1-a88498899f4cb55bcd880fa38b934ca8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9501/flight/search",
+					"host": [
+						"localhost"
+					],
+					"port": "9501",
+					"path": [
+						"flight",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:9501/flight/search Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quoteId\": \"8349e20f-b121-49c5-9c8a-41e50be623c3\",\r\n    \"flightId\": \"49fc7cc443bef7f22d82d9fced327c57\",\r\n    \"fareId\": \"1-05b5ffa38289aa0edd35ddd8db416a91\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9501/flight/price",
+							"host": [
+								"localhost"
+							],
+							"port": "9501",
+							"path": [
+								"flight",
+								"price"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Hyperf"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Oct 2025 04:35:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Length",
+							"value": "106"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"priceId\": \"a13c4f2b-abff-4fb5-a555-3b7fe5fbbbed\",\n        \"expires_at\": \"2025-10-20T04:44:37.420410Z\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

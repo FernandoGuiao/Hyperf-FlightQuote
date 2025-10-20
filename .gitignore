@@ -1,0 +1,12 @@
+# Dependencies
+/vendor/
+
+# Runtime cache and generated files (should not be indexed by IDEs)
+/runtime/
+
+# IDE and tooling
+/.idea/
+/.php-cs-fixer.cache
+
+# Environment files
+/.env

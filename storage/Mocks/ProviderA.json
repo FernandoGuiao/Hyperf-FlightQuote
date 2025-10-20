@@ -1,0 +1,103 @@
+{
+  "ContextoPesquisa": {
+    "OrigemIata": "SDU",
+    "DestinoIata": "CGH",
+    "DataIda": "18/07/2021",
+    "DataVolta": null
+  },
+  "VoosIda": {
+    "Viagens": [
+      {
+        "ViagensId": 0,
+        "empresaAerea": "LA",
+        "horaSaida": "07:45",
+        "horaChegada": "08:50",
+        "duracaoTotalFiltro": "105",
+        "totalTipado": 270.85,
+        "tarifaTipado": 194.79,
+        "moedaTipado": "BRL"
+      },
+      {
+        "ViagensId": 1,
+        "empresaAerea": "G3",
+        "horaSaida": "11:00",
+        "horaChegada": "12:05",
+        "duracaoTotalFiltro": "105",
+        "totalTipado": 264.14,
+        "tarifaTipado": 188.08,
+        "moedaTipado": "BRL"
+      },
+      {
+        "ViagensId": 2,
+        "empresaAerea": "LA",
+        "horaSaida": "06:00",
+        "horaChegada": "08:35",
+        "duracaoTotalFiltro": "155",
+        "totalTipado": 300.00,
+        "tarifaTipado": 225.00,
+        "moedaTipado": "BRL"
+      }
+    ]
+  },
+  "TrechosViagem": [
+    {
+      "ViagensId": 0,
+      "aeroportoOrigem": "SDU",
+      "aeroportoDestino": "CGH",
+      "companhiaAerea": "LA",
+      "voo": "3460",
+      "dataPartida": "18/07/2021 07:45",
+      "dataChegada": "18/07/2021 08:50",
+      "paradas": "0",
+      "listaDeClasses": [
+        { "Familia": "Light", "Preco": { "Total": 194.79, "Moeda": "BRL" }, "BagagemInclusa": false },
+        { "Familia": "Plus", "Preco": { "Total": 279.18, "Moeda": "BRL" }, "BagagemInclusa": true, "BagagemQuantidade": 1,
+          "BagagemPeso": 23 }
+      ]
+    },
+    {
+      "ViagensId": 1,
+
+      "aeroportoOrigem": "SDU",
+      "aeroportoDestino": "CGH",
+      "companhiaAerea": "G3",
+      "voo": "1019",
+      "dataPartida": "18/07/2021 11:00",
+      "dataChegada": "18/07/2021 12:05",
+      "paradas": "0",
+      "listaDeClasses": [
+        { "Familia": "Light", "Preco": { "Total": 188.08, "Moeda": "BRL" }, "BagagemInclusa": false }
+      ]
+    },
+    {
+      "ViagensId": 2,
+      "aeroportoOrigem": "SDU",
+      "aeroportoDestino": "GRU",
+      "companhiaAerea": "LA",
+      "voo": "3498",
+      "dataPartida": "18/07/2021 06:00",
+      "dataChegada": "18/07/2021 07:05",
+      "paradas": "0",
+      "listaDeClasses": [
+        { "Familia": "Light", "Preco": { "Total": 225.00, "Moeda": "BRL" }, "BagagemInclusa": false },
+        { "Familia": "Plus", "Preco": { "Total": 310.00, "Moeda": "BRL" }, "BagagemInclusa": true, "BagagemQuantidade": 1,
+          "BagagemPeso": 23 }
+      ]
+    },
+    {
+      "ViagensId": 2,
+      "aeroportoOrigem": "GRU",
+      "aeroportoDestino": "CGH",
+      "companhiaAerea": "LA",
+      "voo": "3402",
+      "dataPartida": "18/07/2021 07:45",
+      "dataChegada": "18/07/2021 08:35",
+      "paradas": "0",
+      "listaDeClasses": [
+        { "Familia": "Light", "Preco": { "Total": 225.00, "Moeda": "BRL" }, "BagagemInclusa": false },
+        { "Familia": "Plus", "Preco": { "Total": 310.00, "Moeda": "BRL" }, "BagagemInclusa": true, "BagagemQuantidade": 1,
+          "BagagemPeso": 23 }
+      ]
+    }
+  ]
+}

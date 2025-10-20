@@ -1,0 +1,53 @@
+{
+  "ContextoPesquisa": {
+    "Origem": "SAO",
+    "Destino": "RIO",
+    "DataIda": "/Date(1668017700000-0300)/",
+    "DataVolta": null,
+    "ApenasVoosDiretos": false
+  },
+  "ViagensTrecho1": [
+    {
+      "Id": 983089,
+      "Origem": { "CodigoIata": "GRU" },
+      "Destino": { "CodigoIata": "GIG" },
+
+      "DuracaoMinutos": 60,
+      "Preco": { "Moeda": "BRL", "Total": 417.16 },
+      "Voos": [
+        {
+          "Companhia": { "CodigoIata": "LA" },
+          "Numero": "1690",
+          "DataSaida": "/Date(1668017700000-0300)/",
+          "DataChegada": "/Date(1668021300000-0300)/",
+          "ListaDeClasses": [
+            { "Familia": "Light", "Classe": "B", "Preco": { "Total": 417.16, "Moeda": "BRL" }, "BagagemInclusa": false },
+            { "Familia": "Plus", "Classe": "B", "Preco": { "Total": 515.35, "Moeda": "BRL" }, "BagagemInclusa": true,
+              "BagagemQuantidade": 1, "BagagemPeso": 23 }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 983090,
+      "Origem": { "CodigoIata": "CGH" },
+      "Destino": { "CodigoIata": "GIG" },
+      "DuracaoMinutos": 70,
+      "Preco": { "Moeda": "BRL", "Total": 389.90 },
+      "Voos": [
+        {
+          "Companhia": { "CodigoIata": "G3" },
+          "Numero": "1234",
+          "DataSaida": "/Date(1668024900000-0300)/",
+          "DataChegada": "/Date(1668029100000-0300)/",
+          "ListaDeClasses": [
+            { "Familia": "Light", "Classe": "B", "Preco": { "Total": 389.90, "Moeda": "BRL" }, "BagagemInclusa": false },
+            { "Familia": "Plus", "Classe": "B", "Preco": { "Total": 469.90, "Moeda": "BRL" }, "BagagemInclusa": true,
+              "BagagemQuantidade": 1, "BagagemPeso": 23 }
+          ]
+        }
+      ]
+    }
+  ],
+  "ViagensTrecho2": []
+}
